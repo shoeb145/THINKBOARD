@@ -10,10 +10,15 @@ function Home(props) {
 
   useEffect(() => {
     const featch = async () => {
-      const res = await axios.get("");
+      const res = await axios.get("http://localhost:5001/api/notes");
+      setNote(res.data);
+      console.log(res.data);
       try {
-      } catch (error) {}
+      } catch (error) {
+        console.log(error);
+      }
     };
+    featch();
   }, []);
 
   return (
