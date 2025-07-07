@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import { useEffect, useState } from "react";
-import RateLimitedUI from "../components/RateLimitedUi";
+import RateLimitedUI from "../components/RateLimitedUI";
 import NoteCard from "../components/NoteCard";
 import toast from "react-hot-toast";
 import api from "../lib/axios";
